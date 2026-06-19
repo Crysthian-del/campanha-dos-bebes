@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campanha dos Bebês</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Moontime&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo Campanha dos Bebês" class="navbar__logo-img" />
+      </a>
+      </div>
+    <nav class="navbar__links">
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+    <a href="doar.html" class="btn btn--outline-white">Doar</a>
+    <button class="navbar__hamburger" aria-label="Abrir menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Acolher hoje,<br />
+        <em>transformar</em><br />
+        o amanhã.
+      </h1>
+      <div class="hero__divider">
+        <span class="hero__divider-heart">♥</span>
+      </div>
+      <p class="hero__desc">
+        Apoiamos mães e crianças em situação de vulnerabilidade, oferecendo cuidado, respeito e oportunidades para um futuro melhor.
+      </p>
+      <div class="hero__values">
+        <div class="hero__value">
+          <img src="images/icone-acolhimento.png" alt="Acolhimento" />
+          <span>Acolhimento</span>
+        </div>
+        <div class="hero__value">
+          <img src="images/icone-cuidado.png" alt="Cuidado" />
+          <span>Cuidado</span>
+        </div>
+        <div class="hero__value">
+          <img src="images/icone-solidariedade.png" alt="Solidariedade" />
+          <span>Solidariedade</span>
+        </div>
+        <div class="hero__value">
+          <img src="images/icone-esperanca.png" alt="Esperança" />
+          <span>Esperança</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image">
+      <!-- Substitua por sua imagem de mãos/bebê -->
+      <img src="images/hero-foto.jpg" alt="Mãos acolhendo" />
+    </div>
+  </section>
+
+  <!-- ===== QUEM SOMOS ===== -->
+  <section class="quem-somos" id="sobre">
+    <div class="quem-somos__inner">
+      <div class="quem-somos__foto">
+        <!-- Substitua pela foto da instituição -->
+        <img src="images/quem-somos-foto.jpg" alt="Foto da instituição" />
+      </div>
+      <div class="quem-somos__texto">
+        <h2>Quem somos?</h2>
+        <p>
+          Entidade beneficente de assistência social, sem fins lucrativos, que há mais 34 anos apoia a maternidade e o cuidado integral à primeira infância em Canoas.
+        </p>
+        <a href="sobre.html" class="btn btn--pink-outline">Saiba mais sobre nós!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria" id="galeria">
+    <p class="galeria__label">Galeria</p>
+    <h2 class="galeria__titulo">Nossas ações:</h2>
+
+    <div class="galeria__grid">
+      <!--
+        Substitua cada <img> pela sua foto.
+        As classes "galeria__item--tall" deixam a foto maior (linha da esquerda).
+        Você pode adicionar ou remover itens conforme necessário.
+      -->
+      <div class="galeria__item galeria__item--tall">
+        <img src="images/galeria-1.jpg" alt="Ação 1" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-2.jpg" alt="Ação 2" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-3.jpg" alt="Ação 3" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-4.jpg" alt="Ação 4" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-5.jpg" alt="Ação 5" />
+      </div>
+      <div class="galeria__item galeria__item--tall">
+        <img src="images/galeria-6.jpg" alt="Ação 6" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-7.jpg" alt="Ação 7" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-8.jpg" alt="Ação 8" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-9.jpg" alt="Ação 9" />
+      </div>
+      <div class="galeria__item">
+        <img src="images/galeria-10.jpg" alt="Ação 10" />
+      </div>
+    </div>
+
+    <div class="galeria__btn-wrap">
+      <a href="galeria.html" class="btn btn--pink-outline btn--icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        Ver mais fotos
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== NOSSAS AÇÕES / O QUE FAZEMOS ===== -->
+  <section class="acoes" id="projetos">
+    <p class="acoes__label">Nossas ações</p>
+    <h2 class="acoes__titulo">O que fazemos:</h2>
+
+    <div class="acoes__grid">
+      <div class="acoes__card">
+        <div class="acoes__icone">
+          <img src="images/icone-fralda.png" alt="Fraldas" />
+        </div>
+        <h3>Doação de Fraldas</h3>
+        <p>Arrecadamos e distribuímos fraldas para bebês de famílias em situação de vulnerabilidade.</p>
+      </div>
+      <div class="acoes__card">
+        <div class="acoes__icone">
+          <img src="images/icone-alimento.png" alt="Alimentos" />
+        </div>
+        <h3>Alimentos</h3>
+        <p>Distribuição de cestas básicas e alimentos para famílias cadastradas.</p>
+      </div>
+      <div class="acoes__card">
+        <div class="acoes__icone">
+          <img src="images/icone-roupa.png" alt="Roupas" />
+        </div>
+        <h3>Roupas e Itens</h3>
+        <p>Doações de roupas, calçados e itens de higiene para bebês e crianças.</p>
+      </div>
+      <div class="acoes__card">
+        <div class="acoes__icone">
+          <img src="images/icone-apoio.png" alt="Apoio" />
+        </div>
+        <h3>Apoio e Acolhimento</h3>
+        <p>Atendimento humanizado e encaminhamentos para direitos e serviços.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO AJUDAR ===== -->
+  <section class="ajudar">
+    <p class="ajudar__label">Como ajudar:</p>
+    <h2 class="ajudar__titulo">Sua ajuda faz toda a diferença!</h2>
+
+    <div class="ajudar__grid">
+      <div class="ajudar__card">
+        <div class="ajudar__icone">
+          <img src="images/icone-fralda.png" alt="Fraldas" />
+        </div>
+        <h3>Fraldas</h3>
+        <p>Fraldas infantis e geriátricas são sempre muito bem-vindas!</p>
+      </div>
+      <div class="ajudar__card">
+        <div class="ajudar__icone">
+          <img src="images/icone-alimento.png" alt="Alimentos" />
+        </div>
+        <h3>Alimentos</h3>
+        <p>Alimentos não perecíveis podem transformar realidades.</p>
+      </div>
+      <div class="ajudar__card">
+        <div class="ajudar__icone">
+          <img src="images/icone-roupa.png" alt="Roupas" />
+        </div>
+        <h3>Roupas</h3>
+        <p>Doe roupas infantis, adultas e calçados em bom estado.</p>
+      </div>
+      <div class="ajudar__card">
+        <div class="ajudar__icone">
+          <img src="images/icone-apoio.png" alt="Apoio" />
+        </div>
+        <h3>Apoio e Acolhimento</h3>
+        <p>Atendimento humanizado e encaminhamentos para direitos e serviços.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contato" id="contato">
+    <div class="contato__inner">
+      <div class="contato__texto">
+        <h2 class="contato__titulo-script">Fortalecendo Laços</h2>
+        <p class="contato__subtitulo">
+          Serviço de Convivência e Fortalecimento de Vínculos<br />
+          para gestantes, mães e crianças até 6 anos.
+        </p>
+        <ul class="contato__lista">
+          <li>
+            <img src="images/icone-whatsapp-pink.png" alt="WhatsApp" />
+            51 3464.6444
+          </li>
+          <li>
+            <img src="images/icone-email-pink.png" alt="E-mail" />
+            campanhadosbebes2@gmail.com
+          </li>
+          <li>
+            <img src="images/icone-local-pink.png" alt="Endereço" />
+            Rua Marechal Rondon, 100, Niterói, Canoas/RS
+          </li>
+        </ul>
+      </div>
+      <div class="contato__detalhe" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="images/logobranca.png" alt="Logo" class="footer__logo-img" />
+        <div>
+          <p class="footer__logo-small">Associação das Senhoras da</p>
+          <p class="footer__logo-name">Campanha dos Bebês</p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <p class="footer__social-label">Acompanhe nossas ações</p>
+        <div class="footer__social-icons">
+          <!--
+            LINKS AQUI:
+            WhatsApp:  https://wa.me/5551XXXXXXXXX
+            Instagram: https://instagram.com/PERFIL
+            Facebook:  https://facebook.com/PAGINA
+          -->
+          <a href="https://wa.link/8k0bmc" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/campanhadosbebes/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/campanhadosbebes/?locale=pt_BR" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

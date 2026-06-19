@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos – Campanha dos Bebês</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projetos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo Campanha dos Bebês" class="navbar__logo-img" />
+      </a>
+      </div>
+    <nav class="navbar__links">
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+    <a href="doar.html" class="btn btn--outline-white">Doar</a>
+    <button class="navbar__hamburger" aria-label="Abrir menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO PROJETOS ===== -->
+  <section class="proj-hero">
+    <div class="proj-hero__content">
+      <h1 class="proj-hero__title">
+        Projetos que<br />
+        <em>transformam vidas</em>
+      </h1>
+      <p class="proj-hero__desc">
+        Conheça as ações desenvolvidas pela Associação<br />
+        Campanha dos Bebês para apoiar mães, crianças<br />
+        e famílias de Canoas.
+      </p>
+      <!--
+        LINK AQUI: aponta para a página de doação
+      -->
+      <a href="doar.html" class="btn btn--pink-outline-bold">Quero ajudar!</a>
+    </div>
+    <div class="proj-hero__image">
+      <!-- Substitua pela foto de mãe com bebê -->
+      <img src="images/projetos-hero.jpg" alt="Mãe abraçando bebê" />
+    </div>
+  </section>
+
+  <!-- ===== NOSSOS PROJETOS (GRID DE CARDS) ===== -->
+  <section class="projetos">
+    <h2 class="projetos__titulo">Nossos projetos</h2>
+    <p class="projetos__sub">Ações que acolhem, fortalecem e garam esperança</p>
+
+    <div class="projetos__grid">
+
+      <!-- KIT ENXOVAL -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone body de bebê -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <path d="M16 8h16a4 4 0 014 4v20a4 4 0 01-4 4H16a4 4 0 01-4-4V12a4 4 0 014-4Z" stroke="white" stroke-width="2.5"/>
+              <path d="M20 8V6a4 4 0 018 0v2" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M20 24h8M24 20v8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Kit<br />Enxoval</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto do kit enxoval -->
+            <img src="images/proj-kit-enxoval.jpg" alt="Kit Enxoval" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>Entrega de kits enxoval para gestantes a partir da 32ª semana, contendo roupas, itens de cama e banho para o bebê.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- OFICINA DE FRALDAS -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone fralda -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <rect x="6" y="12" width="36" height="26" rx="4" stroke="white" stroke-width="2.5"/>
+              <path d="M6 22h36M14 22V12M34 22V12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Oficina de<br />Fraldas</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto da oficina de fraldas -->
+            <img src="images/proj-oficina-fraldas.jpg" alt="Oficina de Fraldas" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>Oficina semanal onde mães aprendem a produzir fraldas descartáveis, ajudando na economia familiar e no cuidado com os filhos.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- PROJETO WEBMÃE -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone laptop/computador -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <rect x="6" y="10" width="36" height="24" rx="3" stroke="white" stroke-width="2.5"/>
+              <path d="M2 34h44" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 34l-2 4h16l-2-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Projeto<br />WebMãe</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto do projeto WebMãe -->
+            <img src="images/proj-webmae.jpg" alt="Projeto WebMãe" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>Projeto de inclusão digital que auxilia mães e crianças no acesso à tecnologia, currículos e ferramentas digitais.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- OFICINAS -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone tricô/artesanato -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <path d="M10 38c2-8 6-16 14-20M38 38c-2-8-6-16-14-20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="14" r="6" stroke="white" stroke-width="2.5"/>
+              <path d="M18 38h12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Oficinas</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto das oficinas -->
+            <img src="images/proj-oficinas.jpg" alt="Oficinas" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>Atividades de artesanato, culinária e trabalhos manuais para fortalecimento de vínculos e geração de renda.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- EVENTOS -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone balões -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <ellipse cx="18" cy="16" rx="8" ry="10" stroke="white" stroke-width="2.5"/>
+              <ellipse cx="32" cy="18" rx="7" ry="9" stroke="white" stroke-width="2.5"/>
+              <path d="M18 26l-2 12M32 27l2 11" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Eventos</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto de eventos -->
+            <img src="images/proj-eventos.jpg" alt="Eventos" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>A ONG promove eventos como Páscoa, Festa Junina, Natal, Dia das Crianças e aniversários para fortalecer os laços familiares.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- PALESTRAS EDUCATIVAS -->
+      <div class="proj-card">
+        <div class="proj-card__topo">
+          <div class="proj-card__icone">
+            <!-- Ícone palestra/apresentação -->
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <circle cx="24" cy="14" r="7" stroke="white" stroke-width="2.5"/>
+              <path d="M10 42c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M34 8h8M34 12h6M34 16h4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Palestras<br />Educativas</h3>
+          <div class="proj-card__foto">
+            <!-- Substitua pela foto de palestras -->
+            <img src="images/proj-palestras.jpg" alt="Palestras Educativas" />
+          </div>
+        </div>
+        <div class="proj-card__corpo">
+          <p>Palestras sobre saúde, alimentação, sustentabilidade, direitos sociais e qualidade de vida para mães e famílias.</p>
+          <a href="https://wa.link/8k0bmc" class="btn btn--saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ITENS MAIS ARRECADADOS ===== -->
+  <section class="arrecadados">
+    <div class="arrecadados__inner">
+      <h2 class="arrecadados__titulo">Itens mais arrecadados</h2>
+      <p class="arrecadados__sub">Sua doação faz a diferença na vida de famílias.</p>
+
+      <div class="arrecadados__grid">
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-fralda.png" alt="Fraldas" />
+          </div>
+          <span>Fraldas</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-roupa-bebe.png" alt="Roupinhas" />
+          </div>
+          <span>Roupinhas</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-brinquedo.png" alt="Brinquedos" />
+          </div>
+          <span>Brinquedos</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-material-escolar.png" alt="Material escolar" />
+          </div>
+          <span>Material<br />escolar</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-berco.png" alt="Berços" />
+          </div>
+          <span>Berços</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-higiene.png" alt="Produtos de higiene" />
+          </div>
+          <span>Produtos<br />de higiene</span>
+        </div>
+
+        <div class="arrecadados__sep" aria-hidden="true"></div>
+
+        <div class="arrecadados__item">
+          <div class="arrecadados__icone">
+            <img src="images/icone-mamadeira.png" alt="Mamadeiras" />
+          </div>
+          <span>Mamadeiras</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEJA PARTE DESSA TRANSFORMAÇÃO ===== -->
+  <section class="transformacao">
+    <div class="transformacao__inner">
+      <div class="transformacao__conteudo">
+        <h2 class="transformacao__titulo">Seja parte dessa transformação</h2>
+        <p class="transformacao__desc">
+          Apoie nossos projetos e ajude a construir um<br />
+          futuro melhor para mães e crianças.
+        </p>
+        <!--
+          LINK AQUI: aponta para a página de doação
+        -->
+        <a href="doar.html" class="btn btn--pink-outline-bold">Quero ajudar!</a>
+      </div>
+      <div class="transformacao__foto">
+        <!-- Substitua pela foto da pessoa segurando coração -->
+        <img src="images/transformacao-foto.jpg" alt="Pessoa segurando coração" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="images/logobranca.png" alt="Logo" class="footer__logo-img" />
+        <div>
+          <p class="footer__logo-small">Associação das Senhoras da</p>
+          <p class="footer__logo-name">Campanha dos Bebês</p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <p class="footer__social-label">Acompanhe nossas ações</p>
+        <div class="footer__social-icons">
+          <!--
+            LINKS AQUI:
+            WhatsApp:  https://wa.me/5551XXXXXXXXX
+            Instagram: https://instagram.com/PERFIL
+            Facebook:  https://facebook.com/PAGINA
+          -->
+          <a href="https://wa.link/8k0bmc" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/campanhadosbebes/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/campanhadosbebes/?locale=pt_BR" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="projetos.js"></script>
+</body>
+</html>

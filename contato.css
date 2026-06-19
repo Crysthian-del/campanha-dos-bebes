@@ -1,0 +1,507 @@
+/* ============================================
+   PÁGINA CONTATO — contato.css
+   ============================================ */
+
+/* ===== HERO ===== */
+.cont-hero {
+  background: var(--white);
+}
+
+.cont-hero__bg {
+  position: relative;
+  display: flex;
+  min-height: 380px;
+  background: var(--pink);
+  overflow: hidden;
+}
+
+.cont-hero__content {
+  flex: 0 0 50%;
+  padding: 64px 48px 100px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.cont-hero__titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #eb2a7abe;
+}
+
+.cont-hero__sub {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: 0.92;
+}
+
+.cont-hero__desc {
+  font-size: 0.95rem;
+  color: #eb2a7abe;
+  line-height: 1.65;
+  max-width: 380px;
+  font-weight: 600;
+}
+
+.cont-hero__foto {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+
+.cont-hero__foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%);
+}
+
+/* Onda na base do hero */
+.cont-hero__onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  line-height: 0;
+}
+
+.cont-hero__onda svg {
+  width: 100%;
+  height: 80px;
+}
+
+/* Botão WhatsApp logo abaixo da onda */
+.cont-hero__whatsapp-wrap {
+  display: flex;
+  padding: 20px 72px 0;
+}
+
+.btn--whatsapp-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--pink);
+  color: var(--white);
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(244,103,157,0.3);
+}
+
+.btn--whatsapp-hero:hover {
+  background: var(--pink-dark);
+  transform: scale(1.03);
+}
+
+/* ===== CANAIS + FORMULÁRIO ===== */
+.canais-form {
+  padding: 64px 72px 72px;
+  background: var(--white);
+}
+
+.canais-form__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Título de seção com divisor */
+.canais__titulo,
+.form-wrap__titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--pink);
+  margin-bottom: 8px;
+}
+
+.canais__divisor {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, var(--pink) 30%, transparent 100%);
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.canais__divisor::after {
+  content: '✦';
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pink);
+  font-size: 0.7rem;
+  background: var(--white);
+  padding: 0 4px;
+}
+
+/* Lista de canais */
+.canais__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.canais__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.canais__icone {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canais__icone--local { background: var(--pink); }
+.canais__icone--tel   { background: var(--pink); }
+.canais__icone--email { background: var(--pink); }
+
+.canais__icone svg { color: white; fill: white; }
+
+.canais__item strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--pink-dark);
+  margin-bottom: 3px;
+}
+
+.canais__item p {
+  font-size: 0.9rem;
+  color: var(--pink-dark);
+  line-height: 1.45;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-contato__campo {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #f0d0de;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-contato__campo::placeholder {
+  color: #c0a0b0;
+}
+
+.form-contato__campo:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(244,103,157,0.12);
+}
+
+.form-contato__textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.btn--pink-solid-lg {
+  align-self: flex-end;
+  background: var(--pink);
+  color: var(--white);
+  border: none;
+  padding: 13px 32px;
+  border-radius: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn--pink-solid-lg:hover {
+  background: var(--pink-dark);
+  transform: scale(1.03);
+}
+
+/* ===== LOCALIZAÇÃO + HORÁRIO ===== */
+.localizacao {
+  background: var(--pink-bg);
+  padding: 64px 72px;
+}
+
+.localizacao__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.localizacao__titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--pink);
+  margin-bottom: 8px;
+}
+
+.localizacao__divisor {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, var(--pink) 30%, transparent 100%);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.localizacao__divisor::after {
+  content: '✦';
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pink);
+  font-size: 0.7rem;
+  background: var(--pink-bg);
+  padding: 0 4px;
+}
+
+.localizacao__map-container {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(244,103,157,0.12);
+}
+
+/* Horário */
+.horario__card {
+  background: var(--pink-section);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.horario__icone {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horario__dias {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.horario__horas {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.horario__info {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--pink);
+  line-height: 1.5;
+}
+
+/* ===== FAQ ACCORDION ===== */
+.faq {
+  background: var(--white);
+  padding: 64px 72px 80px;
+  position: relative;
+}
+
+.faq__inner {
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.faq__titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--pink-dark);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.faq__divisor {
+  width: 160px;
+  height: 2px;
+  background: var(--pink);
+  margin: 0 auto 12px;
+  position: relative;
+}
+
+.faq__divisor::after {
+  content: '✦';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pink);
+  font-size: 0.7rem;
+  background: var(--white);
+  padding: 0 6px;
+}
+
+.faq__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 36px;
+}
+
+.faq__item {
+  border: 1.5px solid #f0d0de;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.faq__item:has(.faq__pergunta[aria-expanded="true"]) {
+  box-shadow: 0 4px 16px rgba(244,103,157,0.15);
+}
+
+.faq__pergunta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.faq__pergunta:hover {
+  background: var(--pink-bg);
+}
+
+.faq__pergunta[aria-expanded="true"] {
+  color: var(--pink);
+  background: var(--pink-bg);
+}
+
+.faq__seta {
+  flex-shrink: 0;
+  color: var(--pink);
+  transition: transform 0.3s ease;
+}
+
+.faq__pergunta[aria-expanded="true"] .faq__seta {
+  transform: rotate(180deg);
+}
+
+.faq__resposta {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.faq__resposta:not([hidden]) {
+  max-height: 300px;
+  padding: 4px 20px 18px;
+}
+
+.faq__resposta p {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+.faq__resposta a {
+  color: var(--pink);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Coração decorativo */
+.faq__detalhe {
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+  .cont-hero__content { padding: 56px 36px 100px 40px; }
+  .cont-hero__whatsapp-wrap { padding: 20px 40px 0; }
+  .canais-form { padding: 56px 40px; }
+  .localizacao { padding: 56px 40px; }
+  .faq { padding: 56px 40px; }
+}
+
+@media (max-width: 768px) {
+  .cont-hero__bg {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .cont-hero__content {
+    flex: unset;
+    padding: 48px 28px 90px;
+  }
+  .cont-hero__foto {
+    flex: unset;
+    height: 240px;
+  }
+  .cont-hero__foto img {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .cont-hero__whatsapp-wrap {
+    padding: 20px 28px 0;
+    justify-content: center;
+  }
+
+  .canais-form__inner { grid-template-columns: 1fr; gap: 40px; }
+  .localizacao__inner { grid-template-columns: 1fr; gap: 40px; }
+  .btn--pink-solid-lg { align-self: stretch; text-align: center; }
+
+  .faq__detalhe { display: none; }
+}

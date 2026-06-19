@@ -1,0 +1,495 @@
+/* ============================================
+   PÁGINA SOBRE — sobre.css
+   ============================================ */
+
+/* ===== HERO ===== */
+.sobre-hero {
+  display: flex;
+  min-height: 400px;
+  background: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+.sobre-hero__content {
+  flex: 0 0 52%;
+  padding: 80px 48px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.sobre-hero__pre {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.sobre-hero__title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--pink);
+  line-height: 1.1;
+}
+
+.sobre-hero__sub {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pink);
+  margin-top: 6px;
+}
+
+.sobre-hero__image {
+  flex: 0 0 48%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sobre-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* desfoque suave nas bordas para o efeito do figma */
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+
+/* ===== QUEM SOMOS ===== */
+.quem-somos-sobre {
+  background: var(--white);
+  padding: 72px 72px;
+}
+
+.quem-somos-sobre__inner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.quem-somos-sobre__icone {
+  flex-shrink: 0;
+  width: 250px;
+}
+
+.quem-somos-sobre__icone img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.quem-somos-sobre__texto h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.4rem;
+  color:#e0558a;
+  margin-bottom: 16px;
+}
+
+.quem-somos-sobre__texto p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color:#e0558a;
+  line-height: 1.6;
+}
+
+/* ===== MISSÃO, VISÃO E VALORES ===== */
+.mvv {
+  background: var(--pink-section);
+  padding: 64px 72px;
+  text-align: center;
+}
+
+.mvv__titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--pink);
+  margin-bottom: 40px;
+}
+
+.mvv__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mvv__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(244,103,157,0.08);
+}
+
+.mvv__card-titulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--pink);
+}
+
+.mvv__icone {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mvv__card p {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.55;
+}
+
+/* ===== NOSSA HISTÓRIA (TIMELINE) ===== */
+.historia {
+  background: var(--white);
+  padding: 72px 72px 64px;
+  text-align: center;
+}
+
+.historia__titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.historia__linha-detalhe {
+  color: var(--pink);
+  font-size: 1.2rem;
+  margin-bottom: 52px;
+}
+
+.historia__timeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Linha horizontal conectando os itens */
+.historia__timeline::before {
+  content: '';
+  position: absolute;
+  top: 36px; /* centro dos ícones */
+  left: 5%;
+  right: 5%;
+  height: 3px;
+  background: var(--pink);
+  z-index: 0;
+}
+
+.historia__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.historia__icone {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(244,103,157,0.35);
+}
+
+.historia__icone--grande {
+  width: 84px;
+  height: 84px;
+}
+
+.historia__item--destaque .historia__icone {
+  width: 84px;
+  height: 84px;
+}
+
+.historia__texto {
+  text-align: center;
+}
+
+.historia__texto strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--pink);
+  margin-bottom: 6px;
+}
+
+.historia__texto p {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+/* ===== NOSSO IMPACTO ===== */
+.impacto {
+  background: var(--pink-bg);
+  padding: 56px 72px;
+}
+
+.impacto__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1.5px solid rgba(244,103,157,0.2);
+  border-radius: var(--radius);
+  padding: 40px 48px;
+  background: rgba(255,255,255,0.6);
+}
+
+.impacto__label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pink);
+  letter-spacing: 0.04em;
+}
+
+.impacto__detalhe {
+  font-size: 1rem;
+  margin: 4px 0 28px;
+  color: var(--pink);
+}
+
+.impacto__grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.impacto__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.impacto__separador {
+  width: 1px;
+  height: 70px;
+  background: rgba(244,103,157,0.25);
+  flex-shrink: 0;
+}
+
+.impacto__numero {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+
+.impacto__desc {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  font-weight: 600;
+}
+
+/* ===== COMO VOCÊ PODE AJUDAR ===== */
+.ajudar-sobre {
+  background: var(--white);
+  padding: 72px 72px 80px;
+  text-align: center;
+}
+
+.ajudar-sobre__titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--pink);
+  margin-bottom: 52px;
+}
+
+.ajudar-sobre__grid {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.ajudar-sobre__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 32px;
+}
+
+.ajudar-sobre__divisor {
+  width: 1px;
+  min-height: 160px;
+  background: rgba(244,103,157,0.2);
+  align-self: stretch;
+  margin-top: 8px;
+}
+
+.ajudar-sobre__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.ajudar-sobre__icone {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ajudar-sobre__item h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.ajudar-sobre__item p {
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+.btn--pink-outline-bold {
+  border: 2.5px solid var(--pink);
+  color: var(--pink);
+  background: transparent;
+  padding: 11px 28px;
+  border-radius: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--pink-outline-bold:hover {
+  background: var(--pink);
+  color: var(--white);
+}
+
+.ajudar-sobre__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ajudar-sobre__social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  color: var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.ajudar-sobre__social-btn:hover {
+  background: var(--pink);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+  .sobre-hero__content { padding: 56px 36px 56px 40px; }
+  .quem-somos-sobre { padding: 56px 40px; }
+  .mvv { padding: 56px 40px; }
+  .historia { padding: 56px 40px; }
+  .impacto { padding: 48px 40px; }
+  .ajudar-sobre { padding: 56px 40px; }
+}
+
+@media (max-width: 768px) {
+  .sobre-hero {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .sobre-hero__content {
+    flex: unset;
+    padding: 48px 28px 40px;
+  }
+  .sobre-hero__image {
+    flex: unset;
+    height: 240px;
+  }
+  .sobre-hero__image img {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .quem-somos-sobre__inner {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+  .quem-somos-sobre__icone { width: 140px; }
+
+  .mvv__grid { grid-template-columns: 1fr; max-width: 400px; }
+
+  .historia__timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .historia__timeline::before {
+    top: 0;
+    left: 50%;
+    right: auto;
+    width: 3px;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+  .historia__item { flex-direction: row; text-align: left; gap: 20px; width: 100%; }
+  .historia__texto { text-align: left; }
+
+  .impacto__inner { padding: 28px 20px; }
+  .impacto__grid { flex-direction: column; gap: 24px; }
+  .impacto__separador { width: 60px; height: 1px; }
+
+  .ajudar-sobre__grid { flex-direction: column; gap: 32px; }
+  .ajudar-sobre__col { padding: 0; }
+  .ajudar-sobre__divisor { display: none; }
+}

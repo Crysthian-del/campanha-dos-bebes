@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato – Campanha dos Bebês</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contato.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo Campanha dos Bebês" class="navbar__logo-img" />
+      </a>
+      </div>
+    <nav class="navbar__links">
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+    <a href="doar.html" class="btn btn--outline-white">Doar</a>
+    <button class="navbar__hamburger" aria-label="Abrir menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO CONTATO ===== -->
+  <section class="cont-hero">
+    <div class="cont-hero__bg">
+      <div class="cont-hero__content">
+        <h1 class="cont-hero__titulo">Fale conosco</h1>
+        <p class="cont-hero__sub"><em>Estamos aqui para ouvir você!</em></p>
+        <p class="cont-hero__desc">
+          Entre em contato para tirar dúvidas, fazer parcerias ou saber mais sobre a Campanha dos Bebês. Será um prazer falar com você!
+        </p>
+      </div>
+      <div class="cont-hero__foto">
+        <!-- Substitua pela foto de mãe com bebê -->
+        <img src="images/contato-hero.jpg" alt="Mãe com bebê sorrindo" />
+      </div>
+      <!-- Onda na base do hero -->
+      <div class="cont-hero__onda" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C200,80 400,0 600,40 C800,80 1000,0 1200,40 C1320,64 1400,48 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Botão WhatsApp flutuante abaixo da onda -->
+    <div class="cont-hero__whatsapp-wrap">
+      <!--
+        LINK AQUI: substitua pelo link do WhatsApp da ONG
+        Exemplo: https://wa.me/5551XXXXXXXXX
+      -->
+      <a href="https://wa.link/8k0bmc" target="_blank" rel="noopener" class="btn btn--whatsapp-hero">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Conversar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CANAIS + FORMULÁRIO ===== -->
+  <section class="canais-form">
+    <div class="canais-form__inner">
+
+      <!-- CANAIS DE CONTATO -->
+      <div class="canais">
+        <h2 class="canais__titulo">Nossos canais de contato</h2>
+        <div class="canais__divisor" aria-hidden="true"></div>
+
+        <ul class="canais__lista">
+          <li class="canais__item">
+            <div class="canais__icone canais__icone--local">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <strong>Endereço</strong>
+              <p>R. Mal. Rondon, 100 - Niterói, Canoas - RS, 92330-113</p>
+            </div>
+          </li>
+          <li class="canais__item">
+            <div class="canais__icone canais__icone--tel">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <strong>Telefone</strong>
+              <p>(51) 3464-6444</p>
+            </div>
+          </li>
+          <li class="canais__item">
+            <div class="canais__icone canais__icone--email">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <strong>E-mail</strong>
+              <p>campanhadosbebes2@gmail.com</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FORMULÁRIO → REDIRECIONA PARA WHATSAPP -->
+      <div class="form-wrap">
+        <h2 class="form-wrap__titulo">Envie uma mensagem</h2>
+        <div class="canais__divisor" aria-hidden="true"></div>
+
+        <form id="form-contato" class="form-contato" novalidate>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            class="form-contato__campo"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Seu e-mail"
+            class="form-contato__campo"
+            required
+          />
+          <input
+            type="text"
+            id="assunto"
+            placeholder="Assunto"
+            class="form-contato__campo"
+            required
+          />
+          <textarea
+            id="mensagem"
+            placeholder="Sua mensagem"
+            class="form-contato__campo form-contato__textarea"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn--pink-solid-lg">Enviar mensagem</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ONDE ESTAMOS + HORÁRIO ===== -->
+  <section class="localizacao">
+    <div class="localizacao__inner">
+
+      <div class="localizacao__mapa">
+        <h2 class="localizacao__titulo">Onde estamos</h2>
+        <div class="localizacao__divisor" aria-hidden="true"></div>
+        <!--
+          WIDGET GOOGLE MAPS:
+          Para usar o mapa real, obtenha uma chave de API no Google Cloud Console
+          e substitua YOUR_API_KEY abaixo, ou use o embed público do Google Maps:
+          1) Acesse https://maps.google.com
+          2) Pesquise o endereço
+          3) Clique em "Compartilhar" → "Incorporar um mapa"
+          4) Cole o <iframe> aqui substituindo o que está abaixo
+        -->
+        <div class="localizacao__map-container">
+          <iframe
+            title="Localização Campanha dos Bebês"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.62331644698853!2d-51.17534691883722!3d-29.95270928125006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519709ba0d932a3%3A0x813b24088a7a0564!2sAssocia%C3%A7ao%20das%20Senhoras%20da%20Campanha%20dos%20Beb%C3%AAs!5e0!3m2!1spt-BR!2sbr!4v1781662034628!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="260"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="localizacao__horario">
+        <h2 class="localizacao__titulo">Horário de atendimento</h2>
+        <div class="localizacao__divisor" aria-hidden="true"></div>
+        <div class="horario__card">
+          <div class="horario__icone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#F4679D" stroke-width="2" width="40" height="40">
+              <circle cx="12" cy="12" r="10"/>
+              <path stroke-linecap="round" d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="horario__dias">Segunda a sexta</p>
+            <p class="horario__horas">13h às 17h</p>
+            <p class="horario__info">Atendimentos presencial, acolhimento e atividades com as famílias.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DÚVIDAS FREQUENTES (FAQ ACCORDION) ===== -->
+  <section class="faq">
+    <div class="faq__inner">
+      <h2 class="faq__titulo">Dúvidas frequentes</h2>
+      <div class="faq__divisor" aria-hidden="true"></div>
+
+      <div class="faq__lista">
+
+        <div class="faq__item">
+          <button class="faq__pergunta" aria-expanded="false">
+            Como posso me tornar voluntário?
+            <svg class="faq__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__resposta" hidden>
+            <p>Entre em contato conosco por telefone, e-mail ou WhatsApp e agendaremos uma conversa para te contar como participar.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pergunta" aria-expanded="false">
+            Como faço para doar?
+            <svg class="faq__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__resposta" hidden>
+            <p>Você pode doar alimentos, roupas, fraldas, brinquedos e outros itens. Confira a lista completa na página <a href="doar.html">"Como Ajudar"</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pergunta" aria-expanded="false">
+            Como faço para receber ajuda da Campanha dos Bebês?
+            <svg class="faq__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq__resposta" hidden>
+            <p>O atendimento é realizado através de encaminhamento no CRAS do município ou por demanda espontânea. Entre em contato pelos nossos canais para saber mais.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ilustração decorativa (coração de linha) -->
+      <div class="faq__detalhe" aria-hidden="true">
+        <svg viewBox="0 0 160 130" fill="none" xmlns="http://www.w3.org/2000/svg" width="160">
+          <path d="M80 110 C40 80 10 60 10 35 A30 30 0 0 1 80 25 A30 30 0 0 1 150 35 C150 60 120 80 80 110Z"
+            stroke="#F4679D" stroke-width="3" fill="none" opacity="0.35"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <img src="images/logobranca.png" alt="Logo" class="footer__logo-img" />
+        <div>
+          <p class="footer__logo-small">Associação das Senhoras da</p>
+          <p class="footer__logo-name">Campanha dos Bebês</p>
+        </div>
+      </div>
+      <div class="footer__social">
+        <p class="footer__social-label">Acompanhe nossas ações</p>
+        <div class="footer__social-icons">
+          <!--
+            LINKS AQUI:
+            WhatsApp:  https://wa.me/5551XXXXXXXXX
+            Instagram: https://instagram.com/PERFIL
+            Facebook:  https://facebook.com/PAGINA
+          -->
+          <a href="https://wa.link/8k0bmc" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/campanhadosbebes/" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/campanhadosbebes/?locale=pt_BR" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="contato.js"></script>
+</body>
+</html>
